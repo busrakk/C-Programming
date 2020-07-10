@@ -164,8 +164,9 @@ int main() {
     	for(i=1; i<(M*N);i++) {
 		if (yolsay[i][0] == 0 && yolsay[i][1] == 0){
 		
-				break;
+		break;
 		}
+		
 		sayac++;
 	
 		printf("%d ) [%d],[%d]\n", sayac,yolsay[i][0], yolsay[i][1]);
