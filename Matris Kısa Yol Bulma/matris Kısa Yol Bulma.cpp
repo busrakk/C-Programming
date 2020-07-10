@@ -9,13 +9,14 @@ void kisaYol(int , int);
 
 
 /*int matris[8][6]={{1,0,0,0,0,0},
-                  {1,1,1,1,1,1},
-			      {1,1,1,1,0,1},
-				  {1,1,1,0,0,1},
-			      {1,0,1,1,0,1},
-				  {1,1,1,1,0,1},
-				  {1,1,0,1,0,1},
-				  {1,1,1,1,1,1}};*/
+                   {1,1,1,1,1,1},
+	           {1,1,1,1,0,1},
+		   {1,1,1,0,0,1},
+	           {1,0,1,1,0,1},
+		   {1,1,1,1,0,1},
+		   {1,1,0,1,0,1},
+		   {1,1,1,1,1,1}};*/
+
 int matris[M][N];
 int kontrolMatris[M][N]={0};
 int yolsay[M*N][2];
@@ -131,7 +132,7 @@ void kisaYol(int x, int y) {
 	return  kisaYol(x-1,y);
 	}*/
 	
-    //eðer max degere ulaþýlmýssa return ile fonksiyondan çýkar
+    //eÃ°er max degere ulaÃ¾Ã½lmÃ½ssa return ile fonksiyondan Ã§Ã½kar
 	if (x ==max_x && y==max_y) {
 		isaret = 1;
 		return;
@@ -153,8 +154,8 @@ int main() {
 
 
 	printf("\n*************************\n");
-    printf("  Yol Koordinatlari  \n\n");
-    printf("**************************\n\n"); 
+        printf("  Yol Koordinatlari  \n\n");
+        printf("**************************\n\n"); 
     
     	kisaYol(0,0);
     	
